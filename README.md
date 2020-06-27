@@ -16,12 +16,18 @@ Installation required the following programs to run. Each can be obtained for fr
 
 Once the necessary programs and keys have been obtained, read the following to get the bot up and running
 1. Clone the Directory to your computer
-2. Open a CMD or Node terminal
-3. Navigate to the bot directory src folder
-4. Initiate a `npm install` command
-5. All necessary packages should install
-6. Within the config.js file, add appropriate API keys
-7. Once added, run the bot via the Node terminal with: `node thederpbot.js`
+2. Add a folder within the SRC folder labeled "config"
+3. Within the config folder, add a javascript file named Config.js
+4. Copy paste the following, ensuring to insert the correct information: 
+exports.TOKEN = 'INSERT TOKEN KEY HERE';
+exports.PREFIX = '!';
+exports.GOOGLE_API_KEY = 'INSERT API KEY HERE';
+3. Open a CMD or Node terminal
+4. Navigate to the bot directory src folder
+5. Initiate a `npm install` command
+6. All necessary packages should install
+7. Within the config.js file, add appropriate API keys
+8. Once added, run the bot via the Node terminal with: `node thederpbot.js`
 
 ## Current Commands (Constant Updates)
 ### !Help command
