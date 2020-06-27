@@ -43,6 +43,7 @@ Use this command to find a summarized list of commands from within Discord. The 
   - `!timer [minute] [second]`: Start a timer and have the bot ping you once the timer is complete (Example: `!timer 0 30` for a 30 second timer)
   - `!goodbot`: Tell the bot it's doing a good job
   - `!badbot`: Tell the bot its doing a bad job
+  - `!google [Search Term(s)]`: Performs a search on Google and returns the top three results
 ### Music Commands
   - `!play [Search Term(s) or URL]`: Seaches, lists, and plays a video from YouTube based on input. (Example: `!play Wii Shop Theme` )
   - `!pause`: Pauses current track
@@ -70,6 +71,7 @@ Use this command to find a summarized list of commands from within Discord. The 
   - `!coinflip`: Flip a coin! 
   - `!catfacts`: Pulls from a JSON repository of cat facts!
   - `!dogfacts`: Pulls from a JSON repository of dog facts!
+  - `!urban [word]` or `!urban randomword`: Looks up a word in the Urban Dictionary. You can substitute a word with "randomword" to pull a random word definition.
 ### Meme Generation Commands
   - `!memeDungeon`: Darkest Dungeon "DISPAIR" meme
   - `!memeRetarded`: "Oh no, its Retarded" Meme
