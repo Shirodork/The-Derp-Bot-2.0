@@ -53,6 +53,33 @@ Use this command to find a summarized list of commands from within Discord. The 
   - `!queue`: See the current queue
   - `!search`: Use the `!play` command instead of the search command
 ### Fun Commands
+  - `!ascii [message]`: Converts your message to Ascii-style art
+  - `!chewtle`: Embeded message with Chewtle
+  - `!kys`: Embeded message with the Kermit Sewer Slide Meme Image
+  - `!knock`: Pulls from a JSON repository of knock knock jokes
+  - `!loot`: "Maybe the real treasure was the friends you made along the way!"
+  - `!say [message]`: The bot repeats what you say, and deletes the command input.
+  - `!nou`: Uno "Reverse" card text art
+  - `!reddit [subreddit]`: Pulls a random image from a subreddit. Subreddit must be an image-based subreddit. Built in NSFW filer
+  - `!randomchamp`: Chooses a random League of Legends champ for you to play
+  - `!redditnsfw [subreddit]`: Same as !reddit, but allows for NSFW subreddit images. USE AT OWN RISK!
+  - `!pun`: Pulls from a JSON repository of puns.
+  - `!puppies`: Posts a random puppy image
+  - `!heavenorhell`: Roll the dice! This command pulls an image/post from a random subreddit! There are some gross subreddits out there, so use at your own peril!
+  - `!8ball [Question]`: Ask the 8ball a question!
+  - `!coinflip`: Flip a coin! 
+  - `!catfacts`: Pulls from a JSON repository of cat facts!
+  - `!dogfacts`: Pulls from a JSON repository of dog facts!
 ### Meme Generation Commands
-### Emotes Commands
-### Moderation Commands
+  - `!memeDungeon`: Darkest Dungeon "DISPAIR" meme
+  - `!memeRetarded`: "Oh no, its Retarded" Meme
+  - `!memeTruth`: Scroll of Truth Meme
+  - `!memeSpongebob`: Spongebob "Professional Retard" Meme 
+  - `!waiting`: Baby Yoda, Waiting meme
+### Moderation Commands - Must have "Skynet Operator" role
+  - `!fskip`: Forces a music skip
+  - `!clear [number]`: Clears defined number of bot-only messages
+  - `!purge [Number]`: Deletes defined number bot and user messages 
+  - `!ping`: Ping local bot latency and Discord API latency
+  - `!setstatus [Stauts]`: Set the bot's status!
+  - `!tempban [@user] [minutes] [seconds]`: Temporarily ban a user from using bot commands. (Example: `!tempban @Ediphus 0 30` - Bans @ediphys from using bot commands for 30 seconds)
