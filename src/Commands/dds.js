@@ -1,7 +1,13 @@
+/*  DEPRECIATED - Use !google instead
+Summary: Debugger for the DuckDuckGo search engine. 
+Syntax: !ddg [searchterm]
+*/
+
 const serp = require('serp');
 
 exports.run = async (client, message, args, ops) => {
 
+  /*
     searchterm = args.join(' ');
 var options = {
   host : "google.be",
@@ -25,4 +31,8 @@ for( i=0 ; i < links.length; i++){
 
 console.log(links);
 return message.channel.send(string);
+
+*/
+
+return message.channel.send('Depreciated! Use !google instead!')
 }

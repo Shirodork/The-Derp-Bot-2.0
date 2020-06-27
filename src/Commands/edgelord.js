@@ -1,7 +1,14 @@
-exports.run = async (client, message, args, ops) => {
-await message.channel.send({
+/*  
+Summary: Dumb edgelord copy pasta meme 
+Syntax: !edgelord
+*/
+
+exports.run = (client, message, args, ops) => {
+
+// Simple embed send
+message.channel.send({
     embed: {
-      color: 65483,
+      color: 16711680,
       description: 'What the heck did you just hecking say about me,' +
                    'you little bitch? I\'ll have you know I graduated top ' +
                    'of my class of Shadow School, and I\'m a certified ' +

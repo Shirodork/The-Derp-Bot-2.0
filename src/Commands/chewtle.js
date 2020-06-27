@@ -1,8 +1,14 @@
+/*
+Summary: Inside gag. Displayes a picture of Chewtle in an discord embed. 
+Syntax: !chewtle
+
+Future Update: Feel'in cute, might depreciate this command later
+*/
+
 exports.run = (client, message, args, ops) => {
 
-  var k = "<:derpgares:644055757750403073>";
   const embed = {
-    "title": `**Fetal Alcohol Syndrome!**`,
+    "title": `**Chewtle!**`,
     "url": "https://archive-media-0.nyafuu.org/vp/thumb/1573/32/1573329433834s.jpg",
     "color": 839204,
     "timestamp": new Date(),
@@ -15,6 +21,7 @@ exports.run = (client, message, args, ops) => {
     }
   };
 
+  // Send embed
   message.channel.send({ embed });
 
 }

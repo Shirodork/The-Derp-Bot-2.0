@@ -1,11 +1,14 @@
+/*  
+Summary: Administrator forced skip for youtube playback
+Syntax: !fskip
+*/
+
 exports.run = async (client, message, args, ops) => {
 
     // Fetch Guild Objects
     let fetched = ops.active.get(message.guild.id);
 
-    // Check for BANNED role
-    if(!message.member.roles.has('580451191973085184')) return message.channel.send('**SKYNET OPERATOR VERIFICATION FAILED: MUST HAVE <@580451191973085184> ROLE!**');
-
+    // Check to see if there is a queue
     if(!fetched) return message.channel.send('Theres no music in the queue!');
 
     // Check if user is in the channel

@@ -1,7 +1,13 @@
+/*  DO NOT USE
+Summary: Debugger JS to test commands
+*/
+
 const Discord = require("discord.js");
 const snekfetch = require('snekfetch');
 const jimp = require('jimp')
+
 exports.run = async (client, message, args) => {
+    /*
 
     var randomReddit = [
         'furry',
@@ -116,5 +122,7 @@ exports.run = async (client, message, args) => {
         var file = 'testImage.' + Image.getExtension();
         await Image.write(file)
     }
-    
+    */
+
+    return;
 }

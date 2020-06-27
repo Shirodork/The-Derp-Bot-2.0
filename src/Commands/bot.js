@@ -1,5 +1,9 @@
-const Discord = require('discord.js');
+/*
+Summary: Contains information pertaining to the bot and the creator!
+Syntax: !bot
+*/
 
+const Discord = require('discord.js');
 
 exports.run = async (client, message, args, ops) => {
 
@@ -18,7 +22,7 @@ exports.run = async (client, message, args, ops) => {
         "fields": [
         {
             "name": "Feedback",
-            "value": "If you encounter bugs or errors, contact the owner"
+            "value": "If you encounter bugs or errors, contact the owner or post an issue at the GitHub here: https://github.com/Shirodork/The-Derp-Bot-2.0"
         },
         {
             "name": "Get Started",
