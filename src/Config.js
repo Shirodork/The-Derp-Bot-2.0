@@ -1,10 +1,9 @@
-exports.TOKEN = 'NTc4NDI1NDAxNTE3NDA4Mjc2.XvbOvA.4N7gT7tghvY8omxhcbBCvRlho7c';
+exports.TOKEN = 'Insert Discord App Token';
 
 exports.PREFIX = '!';
 
-exports.GOOGLE_API_KEY = 'AIzaSyAAilUHwiayyAdAJtAlzgnGffb5v_lWD1w';
+exports.GOOGLE_API_KEY = 'Insert Google API Key';
 
-exports.SCRAPER_API = 'dc56f60f85449ea52ab06f010677c5c2'
 /*
 __**The Derp Music Bot Commands:**__
 !play [Video URL or Playlist URL or Search Tags]
