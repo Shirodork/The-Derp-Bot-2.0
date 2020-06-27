@@ -17,7 +17,7 @@ exports.run = async (client, message, args, ops) => {
             "fields": [
                 {
                     "name": "General & Utility",
-                    "value": "**!bot | !botinfo | !help | !say | !ping | !timer | !goodbot | !badbot**",
+                    "value": "**!bot | !botinfo | !help | !say | !ping | !timer | !goodbot | !badbot | !google | !**",
                 },
                 {
                     "name": "Music",
