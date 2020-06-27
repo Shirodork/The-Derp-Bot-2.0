@@ -1,10 +1,10 @@
-exports.TOKEN = 'INSERT DISCORD BOT TOKEN HERE';
+exports.TOKEN = 'NTc4NDI1NDAxNTE3NDA4Mjc2.XvbOvA.4N7gT7tghvY8omxhcbBCvRlho7c';
 
 exports.PREFIX = '!';
 
-exports.GOOGLE_API_KEY = 'INSERT GOOGLE YT API KEY HERE';
+exports.GOOGLE_API_KEY = 'AIzaSyAAilUHwiayyAdAJtAlzgnGffb5v_lWD1w';
 
-// DEPRECIATED -- exports.SCRAPER_API = 'INSERT SCRAPER API KEY HERE'
+exports.SCRAPER_API = 'dc56f60f85449ea52ab06f010677c5c2'
 /*
 __**The Derp Music Bot Commands:**__
 !play [Video URL or Playlist URL or Search Tags]

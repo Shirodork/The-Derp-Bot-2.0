@@ -1,6 +1,6 @@
 {
   "name": "thederpbot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Derp Bot Transfer",
   "main": "TheDerpBot.js",
   "dependencies": {
@@ -32,5 +32,13 @@
   },
   "keywords": [],
   "author": "Jonathan \"Shirodork\" Hahn",
-  "license": "ISC"
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shirodork/The-Derp-Bot-2.0.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shirodork/The-Derp-Bot-2.0/issues"
+  },
+  "homepage": "https://github.com/Shirodork/The-Derp-Bot-2.0#readme"
 }
