@@ -1,5 +1,5 @@
 # The-Derp-Bot-2.0
-A multi-purpose discord bot made on Node.JS running on JavaScript.
+A multi-purpose discord bot made on Node.JS running on JavaScript. Please see [Wiki](https://github.com/Shirodork/The-Derp-Bot-2.0/wiki) for more details. 
 
 ## Description
 This is a multipurpose discord bot. The bot runs on Javascript and utilizes Node.js. This bot is still a work-in-progress and is constantly being updated with new commands. The bot has been specially made to allow for easy custom commands. The bot currently employs a variety of utility, entertainment and moderation commands. The bot also features a detailed `!help` command to allow for ease of use. If you find any bugs, please report it to the appropriate Github tracker. Please see each folder for a description of contents and how each can be edited.
