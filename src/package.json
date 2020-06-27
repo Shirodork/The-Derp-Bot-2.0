@@ -1,0 +1,36 @@
+{
+  "name": "thederpbot",
+  "version": "1.0.0",
+  "description": "Derp Bot Transfer",
+  "main": "TheDerpBot.js",
+  "dependencies": {
+    "@ffflorian/icanhazdadjoke": "^1.1.11",
+    "ascii-art": "^1.5.1",
+    "better-sqlite3": "^5.4.3",
+    "discord-meme-generator": "^1.0.6",
+    "discord.js": "^11.6.4",
+    "https": "^1.0.0",
+    "jimp": "^0.13.0",
+    "miniget": "^2.0.0",
+    "node-ddg": "^2.2.1",
+    "node-gyp": "^6.0.0",
+    "node-opus": "^0.3.1",
+    "request": "^2.88.2",
+    "search-engine-client": "^1.2.6",
+    "serp": "^2.1.0",
+    "snekfetch": "^4.0.4",
+    "sqlite3": "^4.1.0",
+    "tiny-timer": "^1.4.0",
+    "urban": "^0.3.2",
+    "yt-search": "^0.4.1",
+    "ytdl": "^1.1.0",
+    "ytdl-core": "^1.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jonathan \"Shirodork\" Hahn",
+  "license": "ISC"
+}
