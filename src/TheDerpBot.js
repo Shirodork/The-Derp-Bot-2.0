@@ -1,6 +1,6 @@
 // Package Requirements
 const Discord = require('discord.js');  // Discord.js
-const { TOKEN, PREFIX, GOOGLE_API_KEY } = require('./config');          // Pulls the token and prefix from our config
+const { TOKEN, PREFIX, GOOGLE_API_KEY } = require('./config/config');          // Pulls the token and prefix from our config
 const client = new Discord.Client();    // New Client Via Discord.js
 
 // Constant Variables
