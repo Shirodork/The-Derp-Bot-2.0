@@ -1,19 +1,18 @@
 exports.run = (client, message, args, ops) => {
 
-    var status = args.join(' ');
+  // Create Status string
+  var status = args.join(' ');
 
-    if(message.member.roles.some(r=>["Ultimate Supreme Owner", "Skynet Operator", "Tech Support", "Dev"].includes(r.name)) ) {
-    
-        message.channel.send(`Elevated Role Verified: <@${message.author.id}> || Command Accepted\nStatus Updated!`);
+  // Role check
+  if (message.member.roles.some(r => rol.moderatorRoles.includes(r.name))) {
 
-        client.user.setActivity(`${status}`, {type: "PLAYING"});
+    message.channel.send(`**Role Verification Successful:** <@${message.author.id}> __[Authorized Moderator]__ \n**Command:** Force Skip Completed!`);
 
+    client.user.setActivity(`${status}`, { type: "PLAYING" });
 
+  } else {
 
-    
-      } else {
-    
-        return message.channel.send('Invalid Role! Must have "Tech Support" or higher elevated role!');
-      }
-    
+    return message.channel.send('**Verification Check Failed: You must have a Moderator Role!**');
+  }
+
 }

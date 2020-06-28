@@ -7,12 +7,12 @@ const Discord = require('discord.js');
 
 exports.run = (client, message, args, ops, rol) => {
     
-    console.log(rol);
+    // console.log(rol);
 
     // Checks for moderator/admin roles - Customizable
     if(!message.member.roles.some(r => rol.moderatorRoles.includes(r.name)) ) {
 
-        return message.channel.send('**Verification Check Failed: Must have a Moderator Role! Double check the Roles.JSON file!**');
+        return message.channel.send('**Verification Check Failed: You must have a Moderator Role!**');
     }
     /* OLD Role check. Non-universal
     // Check for OPERATOR role
