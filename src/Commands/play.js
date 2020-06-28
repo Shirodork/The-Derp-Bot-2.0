@@ -14,7 +14,7 @@ exports.run = async (client, message, args, ops) => {
     // URL validation
     let validate = await ytdl.validateURL(args[0]);
 
-    // Check validation
+    // If Validation is not a URL, run a search for the video
     if (!validate) {
 
         let commandFile = require('./search.js');
@@ -25,7 +25,7 @@ exports.run = async (client, message, args, ops) => {
     //
     let info =  await ytdl.getInfo(args[0]);
 
-    let data = ops.active.get(message.guild.id) || {};
+    let data = await ops.active.get(message.guild.id) || {};
 
     // Update the data
     if(!data.connection) data.connection = await message.member.voiceChannel.join();    // If no connection
