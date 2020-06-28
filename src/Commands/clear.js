@@ -5,14 +5,15 @@ Syntax: !clear [number]
 
 const Discord = require('discord.js');
 
-exports.run = async (client, message, args, ops) => {
+exports.run = (client, message, args, ops, rol) => {
     
+    console.log(rol);
+
     // Checks for moderator/admin roles - Customizable
-    if(!message.member.roles.some(r=>["Ultimate Supreme Owner", "Skynet Operator", "Tech Support", "Dev"].includes(r.name)) ) {
+    if(!message.member.roles.some(r => rol.moderatorRoles.includes(r.name)) ) {
 
-        return message.channel.send('**SKYNET OPERATOR VERIFICATION FAILED: MUST HAVE <@Skynet Operator> ROLE!**');
+        return message.channel.send('**Verification Check Failed: Must have a Moderator Role! Double check the Roles.JSON file!**');
     }
-
     /* OLD Role check. Non-universal
     // Check for OPERATOR role
     if(!message.member.roles.has('580451191973085184')) return message.channel.send('**SKYNET OPERATOR VERIFICATION FAILED: MUST HAVE <@Skynet Operator> ROLE!**');

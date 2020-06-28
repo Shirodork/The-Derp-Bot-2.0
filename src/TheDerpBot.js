@@ -2,12 +2,16 @@
 const Discord = require('discord.js');                                  // Discord.js
 const { TOKEN, PREFIX, GOOGLE_API_KEY } = require('./config/config');   // Pulls the token and prefix from our config
 const client = new Discord.Client();                                    // New Client Via Discord.js
+var fs = require('fs');
 
 // Constant Variables
 const prefix = '!';                     // Sets Command Prefix (!)
 const ownerID = '203320605611655168';   // Bot Owner set to Discord User ID
-const active = new Map();           
+const active = new Map();      
 
+// Role Setup
+var roleListPath = './Roles/roles.json';
+var jsonRoleRead = fs.readFileSync(roleListPath);    
 
 // Server Stat Container
 const serverStats = {
@@ -23,6 +27,7 @@ client.on('message', message => {       // Run when a new message is created in 
     // Variables
     let args = message.content.slice(prefix.length).trim().split(' ');  // User Command Arguments
     let cmd = args.shift().toLowerCase();                               // Arguments to command variable. Convert to lowercase
+    let rol = JSON.parse(jsonRoleRead);;                                // Set up roles to pass to commands
 
     // Return Statements
     if (message.author.bot) return;                     // Prevent self-run commands (bot-initiated commands)
@@ -50,7 +55,7 @@ client.on('message', message => {       // Run when a new message is created in 
                 + currentdate.getMinutes() + ":" 
                 + currentdate.getSeconds();
         let commandFile = require(`./Commands/${cmd}.js`);  // Requires Commands Folder and File (Checks for command in commands folder)
-        commandFile.run(client, message, args, ops);        // Pass variables to command file and execute command script
+        commandFile.run(client, message, args, ops, rol);        // Pass variables to command file and execute command script
         console.log(`Command: "!${cmd}" was inputted by ${message.author.tag} on ${datetime}`)  // Console log command (What command, Who initiated, When initiated)
 
     // Error Catcher

@@ -1,0 +1,11 @@
+{
+    "adminRoles" : [
+        "Tech Support",
+        "Admin"
+    ],
+    "moderatorRoles" : [
+        "Skynet Operator",
+        "Ultimate Supreme Owner",
+        "Dev"
+    ]
+}
