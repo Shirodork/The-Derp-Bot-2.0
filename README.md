@@ -14,7 +14,7 @@ Installation required the following programs to run. Each can be obtained for fr
 * Discord Developer App Bot Token (https://discord.com/developers)
 * (optional) Visual Studio Code
 
-Once the necessary programs and keys have been obtained, read the following to get the bot up and running
+Once the necessary programs and keys have been obtained, read the following to correctly configure the bot and get the bot up and running
 1. Clone the Directory to your computer
 2. Add a folder within the SRC folder labeled "config"
 3. Within the config folder, add a javascript file named Config.js
@@ -27,6 +27,8 @@ exports.GOOGLE_API_KEY = 'INSERT API KEY HERE';
 5. Initiate a `npm install` command
 6. All necessary packages should install
 7. Within the config.js file, add appropriate API keys
+7. Navigate to the Roles folder and open the Roles.json file.
+7. Change the moderator roles to whatever matches your server. Anyone who has this role will be able to use moderator-level commands.
 8. Once added, run the bot via the Node terminal with: `node thederpbot.js`
 
 ## Current Commands (Constant Updates)
