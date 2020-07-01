@@ -5,31 +5,7 @@ A multi-purpose discord bot made on Node.JS running on JavaScript. Please see [W
 This is a multipurpose discord bot. The bot runs on Javascript and utilizes Node.js. This bot is still a work-in-progress and is constantly being updated with new commands. The bot has been specially made to allow for easy custom commands. The bot currently employs a variety of utility, entertainment and moderation commands. The bot also features a detailed `!help` command to allow for ease of use. If you find any bugs, please report it to the appropriate Github tracker. Please see each folder for a description of contents and how each can be edited.
 
 ## Installation
-Installation required the following programs to run. Each can be obtained for free. [Click Here for complete installation instructions](https://github.com/Shirodork/The-Derp-Bot-2.0/wiki/Complete-Installation-Guide-%5BWINDOWS%5D):
-* Python 2.7 (With PATH)
-* FFMPEG (with PATH)
-* Node.JS
-* Windows Build Tools 4.0.0
-* Google Developer Youtube-Data-API Key (https://console.developers.google.com/)
-* Discord Developer App Bot Token (https://discord.com/developers)
-* (optional) Visual Studio Code
-
-Once the necessary programs and keys have been obtained, read the following to correctly configure the bot and get the bot up and running
-1. Clone the Directory to your computer
-2. Add a folder within the SRC folder labeled "config"
-3. Within the config folder, add a javascript file named Config.js
-4. Copy paste the following, ensuring to insert the correct information: 
-exports.TOKEN = 'INSERT TOKEN KEY HERE';
-exports.PREFIX = '!';
-exports.GOOGLE_API_KEY = 'INSERT API KEY HERE';
-3. Open a CMD or Node terminal
-4. Navigate to the bot directory src folder
-5. Initiate a `npm install` command
-6. All necessary packages should install
-7. Within the config.js file, add appropriate API keys
-7. Navigate to the Roles folder and open the Roles.json file.
-7. Change the moderator roles to whatever matches your server. Anyone who has this role will be able to use moderator-level commands.
-8. Once added, run the bot via the Node terminal with: `node thederpbot.js`
+[Click Here for complete installation instructions GitWiki Page](https://github.com/Shirodork/The-Derp-Bot-2.0/wiki/Complete-Installation-Guide-%5BWINDOWS%5D):
 
 ## Current Commands (Constant Updates)
 ### !Help command
