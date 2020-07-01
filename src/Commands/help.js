@@ -1,3 +1,9 @@
+/**
+ * Summary: This command lists all available commands. You can add a category to get a more detailed list of command functions.
+ * 
+ * Useage: !help    OR      !help [Category]
+ */
+
 exports.run = async (client, message, args, ops) => {
 
     // If there are no arguemnts, list commands

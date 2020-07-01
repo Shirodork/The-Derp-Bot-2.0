@@ -1,3 +1,8 @@
+/**
+ * DEPRECIATED: Testing Command. Do Not Use
+ */
+
+ /*
 const Jimp = require('jimp');
 
 // Dank Dungeon Image
@@ -38,4 +43,10 @@ exports.run = async (client, message, args, ops) => {
             .catch(function (err) {
                 console.error(`DankDungeon Command Critical Failure:\n${err}`);         // Full error report
             });
+}
+
+*/
+
+exports.run = async (client, message, args, ops) => {
+    return;
 }

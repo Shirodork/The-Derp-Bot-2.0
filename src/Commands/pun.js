@@ -1,3 +1,8 @@
+/**
+ * Summary: Chooses a random pun from the repository below
+ * 
+ * Useage: !pun
+ */
 exports.run = (client, message, args, ops) => {
 
     var responses =

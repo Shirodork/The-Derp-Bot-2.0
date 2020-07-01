@@ -1,6 +1,13 @@
+/**
+ * Summary: Meme generator. Create your own Meme
+ * Meme: Spongebob Professional Retard
+ * 
+ * Useage: !memespongebob [text]
+ */
+
 const Jimp = require('jimp');
 const Discord = require('discord.js');
-// Dank Dungeon Image
+// Spongebob
 var fileName = 'https://i.imgur.com/UTW2r9H.png';
 var textName = 'https://i.imgur.com/pe2qfa0.png';
 
@@ -13,9 +20,6 @@ exports.run = async (client, message, args, ops) => {
 
     var Lfont;
     
-    /* // Temp Lock
-    if (message.author.id !== ops.ownerID) return message.channel.send('Sorry! Only __**Authorized**__ users can use this command.');
-    */
     // If no Args, Return Message
     if (!args[0]) return message.channel.send("You Must Put In A Statement! (Ex. !meme [Statement Here]")
 
@@ -27,9 +31,11 @@ exports.run = async (client, message, args, ops) => {
         console.log("Font set to 32");
         await jimpText32(textName);
         await message.channel.send('Proccessing Text')
+        message.delete().catch( O_o => {});
         console.log("Text Print Complete")
         await jimpImage(fileName);
         await message.channel.send('Proccessing Image')
+        message.delete().catch( O_o => {});
         console.log("Image Complete")
         await relayImage();
 
@@ -126,6 +132,7 @@ exports.run = async (client, message, args, ops) => {
         }
 
         message.channel.send(`Proccessing Meme!`);
+        message.delete().catch( O_o => {});
         return message.channel.send({ files: [file], embed: embed});
     }
 }

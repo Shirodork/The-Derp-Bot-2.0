@@ -1,3 +1,10 @@
+/**
+ * Summary: Extension of !play Command. If !play does not recieve a URL, a Youtube search is
+ *          initiated. The command lists 10 videos and awaits a user response. Once a video is
+ *          chosen, the !search command converts the video to URL and passes it back to !play
+ * Useage: !search [search terms] 
+ *          (Recommended to use !play instead of !search)
+ */
 const search = require('yt-search');
 
 exports.run = async (client, message, args, ops) => {

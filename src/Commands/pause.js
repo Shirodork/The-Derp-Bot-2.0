@@ -1,3 +1,9 @@
+/**
+ * Summary: Pause the currently playing song
+ * 
+ * Useage: !pause
+ */
+
 exports.run = (client, message, args, ops) => {
 
     // Fetch Guild Objects

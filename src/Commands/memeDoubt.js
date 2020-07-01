@@ -1,6 +1,14 @@
+/**
+ * Summary: Meme generator. Create your own Meme
+ * Meme: Doggo Doubt
+ * 
+ * Useage: !memeDoubt [text]
+ */
+
 const Jimp = require('jimp');
 const Discord = require('discord.js');
-// Dank Dungeon Image
+
+// Lucky Doubt
 var fileName = 'https://i.imgur.com/cV3UOqF.png';
 var textName = 'https://i.imgur.com/xR8A8YC.png';
 
@@ -13,9 +21,6 @@ exports.run = async (client, message, args, ops) => {
 
     var Lfont;
     
-    /* // Temp Lock
-    if (message.author.id !== ops.ownerID) return message.channel.send('Sorry! Only __**Authorized**__ users can use this command.');
-    */
     // If no Args, Return Message
     if (!args[0]) return message.channel.send("You Must Put In A Statement! (Ex. !meme [Statement Here]")
 

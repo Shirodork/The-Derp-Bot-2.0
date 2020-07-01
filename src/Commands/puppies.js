@@ -1,15 +1,28 @@
+/**
+ * Summary: Obtains a random puppy pic from the subreddit /r/Puppies
+ * 
+ * Useage: !puppies
+ */
+
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const snekfetch = require('snekfetch');
 
 exports.run = async (client, message, args) => {
 	try {
+        // Obtain Subreddit Data
         const { body } = await snekfetch
             .get('https://www.reddit.com/r/puppies.json?sort=top&t=week')
             .query({ limit: 800 });
+
+        // Filter OUT NSFW
         const allowed = message.channel.nsfw ? body.data.children : body.data.children.filter(post => !post.data.over_18);
         if (!allowed.length) return message.channel.send('It seems we are out of fresh Images!, Try again later.');
+
+        // Choose random post
         const randomnumber = Math.floor(Math.random() * allowed.length)
+
+        // Discord Embed and send
         const embed = new Discord.RichEmbed()
         .setColor(0x00A2E8)
         .setTitle(allowed[randomnumber].data.title)
@@ -20,6 +33,8 @@ exports.run = async (client, message, args) => {
         .setURL(allowed[randomnumber].data.url)
         await console.log(allowed[randomnumber].data.url)
         await message.channel.send(embed)
+
+    // Error Catcher
     } catch (err) {
         return console.log(err);
     }

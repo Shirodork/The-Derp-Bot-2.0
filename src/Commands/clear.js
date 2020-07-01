@@ -1,29 +1,20 @@
-/*
-Summary: Clean-up command. Clears BOT-ONLY messages in the amount specified, from most recent to oldest.
-Syntax: !clear [number]
+/** 
+* Summary: Clean-up command. Clears BOT-ONLY messages in the amount specified, from most recent to oldest.
+* Syntax: !clear [number]
 */
 
 const Discord = require('discord.js');
 
 exports.run = (client, message, args, ops, rol) => {
-    
-    // console.log(rol);
 
     // Checks for moderator/admin roles - Customizable
     if(!message.member.roles.some(r => rol.moderatorRoles.includes(r.name)) ) {
 
         return message.channel.send('**Verification Check Failed: You must have a Moderator Role!**');
     }
-    /* OLD Role check. Non-universal
-    // Check for OPERATOR role
-    if(!message.member.roles.has('580451191973085184')) return message.channel.send('**SKYNET OPERATOR VERIFICATION FAILED: MUST HAVE <@Skynet Operator> ROLE!**');
-    */
 
     // Checks for a number input
     if(!args[0]) return message.channel.send("Input a number");
-
-    // Set clear length
-    var ClrLenght = (args[0] + 1);
 
     // Delete previous user command
     message.delete().catch( O_o => {});

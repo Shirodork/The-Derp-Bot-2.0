@@ -1,8 +1,13 @@
+/**
+ * Summary: Inside joke ping. Can be edited for other users
+ * 
+ * Usage: !stebbersping
+ */
+
 const ascii = require('ascii-art');
 
 exports.run = (client, message, args, ops) => {
 
-    var z = "<:BestBuddie:230182852652826625>";
     var x = 3;
 	var i = 0;
 	

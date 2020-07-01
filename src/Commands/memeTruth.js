@@ -1,3 +1,10 @@
+/**
+ * Summary: Meme generator. Create your own Meme
+ * Meme: Scroll of truth
+ * 
+ * Useage: !memetruth [text]
+ */
+
 const Jimp = require('jimp');
 const Discord = require('discord.js');
 // Dank Dungeon Image

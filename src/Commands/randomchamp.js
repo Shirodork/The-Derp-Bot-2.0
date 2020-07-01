@@ -1,3 +1,8 @@
+/**
+ * Summary: Chooses a random league of legend champ. MUST BE UPDATED FOR EVERY NEW CHAMP!
+ * 
+ * Useage: !randomchamp
+ */
 exports.run = (client, message, args, ops) => {
 
     var responses =

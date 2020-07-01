@@ -1,4 +1,8 @@
-// Returns: maybe Thre Real Treasure is the friends we made along the way
+/**
+ * Summary: Stupid Quote.
+ * 
+ * Useage: !loot
+ */
 
 exports.run = (client, message, args, ops) => {
 

@@ -1,4 +1,9 @@
-const urban = require('urban');
+/**
+ * Summary: This command allows you to look up an urban dictionary definition for a word. Can also be used to look up random words for fun
+ * 
+ * Useage: !urban [word(s)]     OR      !urban randomword
+ */
+const urban = require('urban');         // UrbanDictionary API
 const Discord = require('discord.js');
 
 exports.run = (client, message, args, ops) => {
@@ -125,27 +130,6 @@ exports.run = (client, message, args, ops) => {
 
             };
             return message.channel.send({ embed });
-
-
-
-            /*
-                    else {
-                        const def = new Discord.MessageEmbed()
-                        .setColor('839204')
-                        .setTitle(json.word)
-                        .setURL(json.permalink, true)
-                        .setDescription(json.definition)
-                        .setThumbnail('https://is4-ssl.mzstatic.com/image/thumb/Purple111/v4/7e/49/85/7e498571-a905-d7dc-26c5-33dcc0dc04a8/source/512x512bb.jpg')
-                        .addField('Example', json.example)
-                        .addField('Upvotes', json.thumbs_up, true)
-                        .addField('Downvotes', json.thumbs_down, true)
-                        .setTimestamp(new Date())
-                        .setFooter(`Definition by: ${json.author} || Requested by: ${message.author.tag}`)        
-                    
-                        message.channel.send(def);
-            
-                    }
-                    */
         })
     }
 }

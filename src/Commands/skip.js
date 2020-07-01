@@ -1,11 +1,21 @@
+/**
+ * Summary: This command handles skips for regular users. The command initiates a skip only once majority listeners input the command
+ * 
+ * Useage: !skip
+ */
+
 exports.run = async (client, message, args, ops) => {
 
     // Fetch Guild Objects
     let fetched = ops.active.get(message.guild.id);
 
     // Check for BANNED role
-    if(message.member.roles.has('580452048659546125')) return message.channel.send('You have been temporarily banned from using this command!');
+    if(!message.member.roles.some(r => rol.bannedRoles.includes(r.name)) ) {
 
+        return message.channel.send('**Verification Check Failed: You have been temporarily banned from using this command!**');
+    }
+
+    // Check Queue
     if(!fetched) return message.channel.send('Theres no music in the queue!');
 
     // Check if user is in the channel

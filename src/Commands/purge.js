@@ -1,3 +1,8 @@
+/**
+ * Summary: Deletes a specified number of chats from both users and bots
+ * Useage: !purge [number]
+ */
+
 const Discord = require('discord.js');
 
 exports.run = async (client, message, args, ops) => {
@@ -10,9 +15,6 @@ exports.run = async (client, message, args, ops) => {
 
     // Check for arguments
     if(!args[0]) return message.channel.send("Input a number");
-
-    // Create the clear length
-    var ClrLenght = (args[0] + 1);
 
     // Delete the user command
     message.delete().catch( O_o => {});

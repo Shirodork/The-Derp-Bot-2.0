@@ -1,3 +1,8 @@
+/**
+ * DEPRECIATED: Was originally used to test the Meme Generation Command. I keep the file here to test future meme commands. 
+ */
+
+ /*
 const Jimp = require('jimp');
 const Discord = require('discord.js');
 // Dank Dungeon Image
@@ -110,4 +115,10 @@ exports.run = async (client, message, args, ops) => {
 
         return message.channel.send({ files: [file], embed: embed});
     }
+    */
+
+    
+   exports.run = async (client, message, args, ops) => {
+
+    return;
 }

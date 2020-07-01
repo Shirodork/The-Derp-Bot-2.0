@@ -1,12 +1,19 @@
+/**
+ * Summary: Initiate a temporary ban timeout for a user.
+ */
+
 const Timer = require('tiny-timer');
 
 exports.run = async (client, message, args, ops) => {
 
     // Elevated User Check
-    if (!message.member.roles.some(r => ["Ultimate Supreme Owner", "Skynet Operator", "Tech Support", "Dev"].includes(r.name))) return message.channel.send("You do not have enough permissions to use this command!")
+    if(!message.member.roles.some(r => rol.moderatorRoles.includes(r.name)) ) {
 
-    if (message.member.roles.some(r => ["Skynet"].includes(r.name))) return message.channel.send("Sorry Idjit, but you cant ban me!");                 
+        return message.channel.send('**Verification Check Failed: You must have a Moderator Role!**');
+    }
 
+    // Bot Check
+    if (message.member.roles.some(r => rol.botRoles.includes(r.name))) return message.channel.send("Sorry Idjit, but you cant ban me!");                 
 
     // Variable initialization
     var user = message.author.id;
@@ -37,7 +44,7 @@ exports.run = async (client, message, args, ops) => {
     // Unbannable role check
     if (banUser.roles.some(role => role.name === "Spam Ban")) return message.channel.send("This user already has a temp ban restriction on them!");
 
-
+    // If no additional arguments
     if (!args[1]) {
 
         var secMS = 0;
@@ -46,17 +53,25 @@ exports.run = async (client, message, args, ops) => {
         var secMS = second * 1000;
     }
 
+    // Total time
     var totalMS = minMS + secMS
 
+    // Add role to user and catch error
     banUser.addRole(myRole).catch(console.error);
 
+    // Resposne
     message.channel.send(`${banUser} has banned from using commands for ${minute} minute(s) and ${second} second(s).\nI will notify ${banUser} when their ban is up!`)
 
+    // Timer function call
     setTimeout(timerRing, totalMS, user);
 
+    // Timer function with user pass
     function timerRing(user) {
 
+        // Remove role after timer is done
         banUser.removeRole(myRole).catch(console.error);
+
+        // Remind user that ban is up. Can be changed for repetition
         for (i = 0; i < 1; i++) {
             message.channel.send(`${banUser} || Your Temp Ban is up!`)
         }

@@ -1,3 +1,8 @@
+/*
+Summary: Command lets a moderator update the status of the bot
+Useage: !setstatus [message]
+*/
+
 exports.run = (client, message, args, ops) => {
 
   // Create Status string

@@ -7,5 +7,12 @@
         "Skynet Operator",
         "Ultimate Supreme Owner",
         "Dev"
+    ],
+    "bannedRoles" : [
+        "Spam Ban",
+        "LockMusic"
+    ],
+    "botRoles" : [
+        "Skynet"
     ]
 }

@@ -1,3 +1,9 @@
+/**
+ * Summary: This command relays the current music in queue for the bot. 
+ * 
+ * Useage: !queue
+ */
+
 exports.run = async (client, message, args, ops) => {
 
     // Fetch Guild Objects from MAP

@@ -1,4 +1,11 @@
-const ytdl = require('ytdl-core');
+/**
+ * Summary: This command handles Youtube playback. A user can insert a URL or SearchTerms and the command will either play back the URL, or pass the 
+ *          search terms to the !search command, in which users can choose which video that desire.
+ * 
+ * Useage: !play [URL]      OR      !play [Search Term(s)]
+ */
+
+const ytdl = require('ytdl-core');  // Youtube StreamData Downloader
 
 exports.run = async (client, message, args, ops) => {
     

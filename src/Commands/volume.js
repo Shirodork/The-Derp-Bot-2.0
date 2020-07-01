@@ -1,10 +1,18 @@
+/**
+ * Summary: Control volume for the music playback. [1-100] Normal Volume || [101-200] Extreme Volume
+ * 
+ * Useage: !volume [1-200]
+ */
+
 exports.run = (client, message, args, ops) => {
 
     // Fetch Guild Objects
     let fetched = ops.active.get(message.guild.id);
 
-    // Check for BANNED role
-    if(message.member.roles.has('580452048659546125')) return message.channel.send('You have been temporarily banned from using this command!');
+    if(!message.member.roles.some(r => rol.bannedRoles.includes(r.name)) ) {
+
+        return message.channel.send('**Verification Check Failed: You have been temporarily banned from using this command!**');
+    }
 
     // Check if Fetched Exists
     if(!fetched) return message.channel.send('There are no songs in the queue!')

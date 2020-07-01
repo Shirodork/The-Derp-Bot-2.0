@@ -1,11 +1,24 @@
+/**
+ * Summary: Ping for a friend 
+ * 
+ * Useage: !zechping [number]
+ */
+
 exports.run = (client, message, args, ops) => {
 
-    var z = "<:BestBuddie:230182852652826625>";
-    var x = args;
+	// Custom Emote
+	var z = "<:BestBuddie:230182852652826625>";
+	
+	// # of times to ping
+	var x = args;
+	
+	// Var initialization
     var i = 0;
 
-	if(message.member.roles.some(r => ["Ultimate Supreme Owner", "Skynet Operator", "Tech Support", "Dev"].includes(r.name))){
-		for (i=0;i<x;i++){
+	// Moderator Check for unlimited pings
+    if(message.member.roles.some(r => rol.moderatorRoles.includes(r.name)) ) {
+
+        for (i=0;i<x;i++){
 			
 			message.channel.send(z + z + z + z +  "..." + z + z + z + "....." +z + z + z + "..." + z + "............" + z + "\n" +
 			".................." + z + "...." + z + "..............." + z + ".................." + z + "............" + z + "\n" +
@@ -13,6 +26,8 @@ exports.run = (client, message, args, ops) => {
 			"......." + z + "..............." + z + "..............." + z + ".................." + z + "............" + z + "\n" +
 			z + z + z + z + "..." + z + z + z + "....." + z + z + z + "..." + z + "............" + z + "\n" + ".")
 			}
+
+	// Ping Amount checks for normal users
 	} else if(x >= 6){
 		message.channel.send("Command $zech is limited to 5!" + "\n" +
 		z + z + z + z +  "..." + z + z + z + "....." +z + z + z + "..." + z + "............" + z + "\n" +

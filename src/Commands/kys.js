@@ -1,3 +1,8 @@
+/**
+ * Summary: Crude Inside Joke within server. Commit Sewer Slide Meme
+ * Useage: !kys
+ */
+
 exports.run = (client, message, args, ops) => {
 
   var k = "<a:PPDance:535167355819524096>";

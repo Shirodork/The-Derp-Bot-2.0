@@ -1,3 +1,9 @@
+/**
+ * Summary: Meme Generator
+ * Meme: Baby Yoda
+ * 
+ * Useage: !waiting [word]
+ */
 
 const Jimp = require('jimp');
 const Discord = require('discord.js');

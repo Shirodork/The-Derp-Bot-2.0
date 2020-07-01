@@ -1,7 +1,14 @@
+/**
+ * Summary: Meme generator. Create your own Meme
+ * Meme: Oh No, Its Retarded!
+ * 
+ * Useage: !memeretarded [text]
+ */
+
 const Jimp = require('jimp');
 const Discord = require('discord.js');
 // Dank Dungeon Image
-var fileName = 'https://i.imgur.com/cV3UOqF.png';
+var fileName = 'https://i.imgur.com/6VC6soo.jpg';
 var textName = 'https://i.imgur.com/6TpHZtY.png';
 
 

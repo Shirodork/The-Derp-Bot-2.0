@@ -47,13 +47,14 @@ client.on('message', message => {       // Run when a new message is created in 
         // Grab command date
         var currentdate = new Date(); 
 
-        // Convert date to correct time
+        // String Command Timestamp
         var datetime = "TimeStamp: " + currentdate.getDate() + "/"
                 + (currentdate.getMonth()+1)  + "/" 
                 + currentdate.getFullYear() + " @ "  
                 + currentdate.getHours() + ":"  
                 + currentdate.getMinutes() + ":" 
                 + currentdate.getSeconds();
+        
         let commandFile = require(`./Commands/${cmd}.js`);  // Requires Commands Folder and File (Checks for command in commands folder)
         commandFile.run(client, message, args, ops, rol);        // Pass variables to command file and execute command script
         console.log(`Command: "!${cmd}" was inputted by ${message.author.tag} on ${datetime}`)  // Console log command (What command, Who initiated, When initiated)
@@ -76,7 +77,7 @@ client.on('ready', () => {
     generalChannel.send('Beep Boop! Online!');
 
 
-   client.user.setActivity('the days go by...', {type: "WATCHING"});    // Set inital status - Customizable [Type : WATCHING, PLAYING, STREAMING]
+   client.user.setActivity('!help for command list', {type: "WATCHING"});    // Set inital status - Customizable [Type : WATCHING, PLAYING, STREAMING]
    console.log("Status Set!\nBot Awaiting Commands")    // Status set log
     
 });

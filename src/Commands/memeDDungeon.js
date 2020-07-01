@@ -1,3 +1,10 @@
+/**
+ * Summary: Meme generator. Create your own Meme
+ * Meme: Darkest Dungeon DISPAIR
+ * 
+ * Useage: !memeDDungeon [text]
+ */
+
 const Jimp = require('jimp');
 const Discord = require('discord.js');
 // Dank Dungeon Image
@@ -13,10 +20,6 @@ exports.run = async (client, message, args, ops) => {
 
     var Lfont;
     
-    /* // Temp Lock
-    if (message.author.id !== ops.ownerID) return message.channel.send('Sorry! Only __**Authorized**__ users can use this command.');
-    */
-    // If no Args, Return Message
     if (!args[0]) return message.channel.send("You Must Put In A Statement! (Ex. !meme [Statement Here]")
 
     // Convert Arguments to Sentence

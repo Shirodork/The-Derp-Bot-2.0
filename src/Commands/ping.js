@@ -1,4 +1,7 @@
-// This is the Ping command file
+/**
+ * Summary: Test the latency on the server [Acceptable Range (0-250ms)], and test the Discord API latency [Acceptable Range (5-250ms)]
+ * Useage: !ping
+ */
 
 exports.run = async (client, message, args) => {
     

@@ -1,3 +1,9 @@
+/**
+ * Summary: Small Knock Knock joke command. I plan to completely redo this and utilize an API to 
+ *          pull jokes from an online repository instead of keeping local jokes
+ * 
+ * Useage: !knock
+ */
 exports.run = (client, message, args, ops) =>
 {
     var jokes = [

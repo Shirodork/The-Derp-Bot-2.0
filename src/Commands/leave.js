@@ -1,4 +1,8 @@
-
+/**
+ * Summary: Ends music playback by emptying queue, ending currently playing song
+ * 
+ * Useage: !leave
+ */
 exports.run = (client, message, args, ops) => {
 
         // Fetch Guild Objects
