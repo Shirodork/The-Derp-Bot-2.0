@@ -1,12 +1,12 @@
 // Package Requirements
 const Discord = require('discord.js');                                  // Discord.js
-const { TOKEN, PREFIX, GOOGLE_API_KEY } = require('./config/config');   // Pulls the token and prefix from our config
+const { TOKEN, PREFIX, GOOGLE_API_KEY, GUILDID, TOTALUSERSID, MEMBERCOUNTID, BOTCOUNTID, OWNERID, GENERALCHANNEL} = require('./config/config');   // Pulls the token and prefix from our config
 const client = new Discord.Client();                                    // New Client Via Discord.js
 var fs = require('fs');
 
 // Constant Variables
-const prefix = '!';                     // Sets Command Prefix (!)
-const ownerID = '203320605611655168';   // Bot Owner set to Discord User ID
+const prefix = PREFIX;                     // Sets Command Prefix (!)
+const ownerID = OWNERID;   // Bot Owner set to Discord User ID
 const active = new Map();      
 
 // Role Setup
@@ -15,10 +15,10 @@ var jsonRoleRead = fs.readFileSync(roleListPath);
 
 // Server Stat Container
 const serverStats = {
-    guildID: '203321557026734080',          // Discord server ID
-    totalUsersID: '579512481173602314',     // Channel ID for user counting
-    memberCountID: '579512556931252249',    // Channel ID for memeber counting
-    botCountID: '579512598819504128'        // Channel ID for bot counting
+    guildID: GUILDID,               // Discord server ID
+    totalUsersID: TOTALUSERSID,     // Channel ID for user counting
+    memberCountID: MEMBERCOUNTID,   // Channel ID for memeber counting
+    botCountID: BOTCOUNTID          // Channel ID for bot counting
 };
 
 // Listener Events
@@ -68,15 +68,13 @@ client.on('message', message => {       // Run when a new message is created in 
 // Ready Event - Runs When Bot First Goes Online
 client.on('ready', () => {
     
-    /* DEPRECIATED. If you want to use this, obtain your server's GENERAL Text channel ID and input it
-    var generalChannel = client.channels.get("203321557026734080"); // Grabs general channel
-    */
+    var generalChannel = client.channels.get(GENERALCHANNEL); // Grabs general channel
+    
 
     console.log('Bot is Launched!');    // Console Log
 
-    /* Tell the server you are online in the general channel
     generalChannel.send('Beep Boop! Online!');
-    */
+
 
    client.user.setActivity('the days go by...', {type: "WATCHING"});    // Set inital status - Customizable [Type : WATCHING, PLAYING, STREAMING]
    console.log("Status Set!\nBot Awaiting Commands")    // Status set log
