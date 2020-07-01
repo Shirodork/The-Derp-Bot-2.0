@@ -34,6 +34,8 @@ Use this command to find a summarized list of commands from within Discord. The 
 ### Fun Commands
   - `!ascii [message]`: Converts your message to Ascii-style art
   - `!chewtle`: Embeded message with Chewtle
+  - `!dankmeme`: Pulls a meme from the subreddit r/dankmemes
+  - `!edgelord`: Edgelord copypasta meme 
   - `!kys`: Embeded message with the Kermit Sewer Slide Meme Image
   - `!knock`: Pulls from a JSON repository of knock knock jokes
   - `!loot`: "Maybe the real treasure was the friends you made along the way!"
@@ -51,12 +53,13 @@ Use this command to find a summarized list of commands from within Discord. The 
   - `!dogfacts`: Pulls from a JSON repository of dog facts!
   - `!urban [word]` or `!urban randomword`: Looks up a word in the Urban Dictionary. You can substitute a word with "randomword" to pull a random word definition.
 ### Meme Generation Commands
-  - `!memeDungeon`: Darkest Dungeon "DISPAIR" meme
-  - `!memeRetarded`: "Oh no, its Retarded" Meme
-  - `!memeTruth`: Scroll of Truth Meme
-  - `!memeSpongebob`: Spongebob "Professional Retard" Meme 
-  - `!waiting`: Baby Yoda, Waiting meme
-### Moderation Commands - Must have "Skynet Operator" role
+  - `!memeDungeon [text]`: Darkest Dungeon "DISPAIR" meme
+  - `!memeRetarded [text]`: "Oh no, its Retarded" Meme
+  - `!memeTruth [text]`: Scroll of Truth Meme
+  - `!memeSpongebob [text]`: Spongebob "Professional Retard" Meme 
+  - `!memeDoubt [text]`: Doubt meme
+  - `!waiting [text]`: Baby Yoda, Waiting meme
+### Moderation Commands - Must have a defined moderator role
   - `!fskip`: Forces a music skip
   - `!clear [number]`: Clears defined number of bot-only messages
   - `!purge [Number]`: Deletes defined number bot and user messages 
