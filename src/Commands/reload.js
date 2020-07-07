@@ -6,7 +6,7 @@
  * Useage: !reload [command]
  */
 
-exports.run = (client, message, args, ops) => {
+exports.run = (client, message, args, ops, rol) => {
 
     // Delete user input
     message.delete().catch( O_o => {});
@@ -23,7 +23,7 @@ exports.run = (client, message, args, ops) => {
 
     // Error Handler
     } catch(e) {
-
+        console.log(e);
         return message.channel.send(`Unable to reload ${args[0]}`);
     }
 

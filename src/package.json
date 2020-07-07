@@ -10,6 +10,7 @@
     "canvas": "^2.6.1",
     "discord-meme-generator": "^1.0.6",
     "discord.js": "^11.6.4",
+    "electron": "^9.1.0",
     "https": "^1.0.0",
     "jimp": "^0.13.0",
     "miniget": "^2.0.0",
@@ -23,6 +24,8 @@
     "sqlite3": "^4.1.0",
     "tiny-timer": "^1.4.0",
     "urban": "^0.3.2",
+    "weather": "^1.0.4",
+    "weather-js": "^2.0.0",
     "yt-search": "^2.0.1",
     "ytdl": "^1.1.0",
     "ytdl-core": "^2.1.7"

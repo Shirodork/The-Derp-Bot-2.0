@@ -27,7 +27,7 @@ client.on('message', message => {       // Run when a new message is created in 
     // Variables
     let args = message.content.slice(prefix.length).trim().split(' ');  // User Command Arguments
     let cmd = args.shift().toLowerCase();                               // Arguments to command variable. Convert to lowercase
-    let rol = JSON.parse(jsonRoleRead);;                                // Set up roles to pass to commands
+    let rol = JSON.parse(jsonRoleRead);                                // Set up roles to pass to commands
 
     // Return Statements
     if (message.author.bot) return;                     // Prevent self-run commands (bot-initiated commands)
@@ -62,6 +62,7 @@ client.on('message', message => {       // Run when a new message is created in 
     // Error Catcher
     } catch (e) {                                           
         console.log(`Invalid Command ${cmd} Inputted By <@${message.author.tag}>!`);    // Logs Error In Console
+        console.log(e);
         message.channel.send(`<@${message.author.id}> || !${cmd} is **NOT** a valid Command. Type !help for a List of Commands!`)   // Returns Command not found message
     }
 });
@@ -74,7 +75,7 @@ client.on('ready', () => {
 
     console.log('Bot is Launched!');    // Console Log
 
-    generalChannel.send('Beep Boop! Online!');
+    // generalChannel.send('Beep Boop! Online!');
 
 
    client.user.setActivity('!help for command list', {type: "WATCHING"});    // Set inital status - Customizable [Type : WATCHING, PLAYING, STREAMING]
