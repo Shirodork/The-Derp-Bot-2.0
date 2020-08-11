@@ -5,7 +5,7 @@
 
 const Discord = require('discord.js');
 
-exports.run = async (client, message, args, ops) => {
+exports.run = async (client, message, args, ops, rol) => {
     
     // Check for Moderator Role role
     if(!message.member.roles.some(r => rol.moderatorRoles.includes(r.name)) ) {

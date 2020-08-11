@@ -176,6 +176,8 @@ exports.run = async (client, message, args) => {
         'cumsluts',
     ]
 
+        // Choose random subreddit
+        var subreddit = randomReddit[Math.floor(Math.random() * randomReddit.length)];
     // Quirky responses to go with the choice. Feel free to add your own. Follow up with **/r${subreddit}**!
     var responses = [
     `You see a portal. You decide to hop in. On the other side, you find yourself in **r/${subreddit}**`,
@@ -193,8 +195,7 @@ exports.run = async (client, message, args) => {
 
     ]
 
-    // Choose random subreddit
-    var subreddit = randomReddit[Math.floor(Math.random() * randomReddit.length)];
+
 
     // Choose random response
     var botResponse = responses[Math.floor(Math.random() * responses.length)];
