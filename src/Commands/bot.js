@@ -9,7 +9,7 @@ exports.run = async (client, message, args, ops) => {
 
     const embed = {
         "title": "Bot Information",
-        "description": "'The Derp Bot ©' is an all purpose bot created by a degenerate.'",
+        "description": "'The Derp Bot' is an all purpose bot created by a degenerate.'",
         "color": 65483,
         "timestamp": new Date(),
         "footer": {
@@ -23,6 +23,10 @@ exports.run = async (client, message, args, ops) => {
         {
             "name": "Feedback",
             "value": "If you encounter bugs or errors, contact the owner or post an issue at the GitHub here: https://github.com/Shirodork/The-Derp-Bot-2.0"
+        },
+        {
+            "name": "Support",
+            "value": "Like the bot and want to support me? You can tip me on Ko-Fi and help pay for the running server here: https://ko-fi.com/shirodork. Any amount helps!"
         },
         {
             "name": "Get Started",

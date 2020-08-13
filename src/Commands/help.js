@@ -4,7 +4,7 @@
  * Useage: !help    OR      !help [Category]
  */
 
-exports.run = async (client, message, args, ops) => {
+exports.run = async (client, message, args, ops, rol) => {
 
     // If there are no arguemnts, list commands
     if (!args[0]) {

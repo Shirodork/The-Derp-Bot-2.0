@@ -7,10 +7,13 @@
  */
 const search = require('yt-search');
 
-exports.run = async (client, message, args, ops) => {
+exports.run = async (client, message, args, ops, rol) => {
 
-        // Check for BANNED role
-        if(message.member.roles.has('580452048659546125')) return message.channel.send('You have been temporarily banned from using this command!');
+     // Check for BANNED role
+     if(message.member.roles.some(r => rol.bannedRoles.includes(r.name)) ) {
+
+        return message.channel.send('**Verification Check Failed: You have been temporarily banned from using this command!**');
+    }
 
 
     search(args.join(' '), async function(err, res) {
