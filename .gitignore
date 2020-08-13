@@ -88,7 +88,11 @@ config/
 
 #Personal Code
 src/Commands/zechping.js
-src\Commands\zechping.js
+src/Commands/StebbersPing.js
+src/Commands/grenade.js
+src/Commands/chewtle.js
+src/Commands/ablobblewobble.js
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and *not* Next.js
@@ -109,4 +113,3 @@ src\Commands\zechping.js
 
 # TernJS port file
 .tern-port
-src/Commands/zechping.js
