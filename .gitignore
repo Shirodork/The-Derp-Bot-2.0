@@ -109,3 +109,4 @@ src\Commands\zechping.js
 
 # TernJS port file
 .tern-port
+src/Commands/zechping.js
