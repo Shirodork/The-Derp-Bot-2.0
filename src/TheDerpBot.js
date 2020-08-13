@@ -1,6 +1,6 @@
 // Package Requirements
 const Discord = require('discord.js');                                  // Discord.js
-const { TOKEN, PREFIX, GOOGLE_API_KEY, GUILDID, TOTALUSERSID, MEMBERCOUNTID, BOTCOUNTID, OWNERID, GENERALCHANNEL} = require('./config/config');   // Pulls the token and prefix from our config
+const { TOKEN, PREFIX, GOOGLE_API_KEY, GUILDID, TOTALUSERSID, MEMBERCOUNTID, BOTCOUNTID, OWNERID, GENERALCHANNEL} = require('./config/Config.js');   // Pulls the token and prefix from our config
 const client = new Discord.Client();                                    // New Client Via Discord.js
 var fs = require('fs');
 
@@ -10,7 +10,7 @@ const ownerID = OWNERID;   // Bot Owner set to Discord User ID
 const active = new Map();      
 
 // Role Setup
-var roleListPath = './Roles/roles.json';
+var roleListPath = './Roles/Roles.JSON';
 var jsonRoleRead = fs.readFileSync(roleListPath);    
 
 // Server Stat Container

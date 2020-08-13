@@ -5,6 +5,7 @@
     ],
     "moderatorRoles" : [
         "Skynet Operator",
+        "Moderator",
         "Ultimate Supreme Owner",
         "Dev"
     ],
@@ -13,6 +14,7 @@
         "LockMusic"
     ],
     "botRoles" : [
-        "Skynet"
+        "Skynet",
+        "Bot"
     ]
 }

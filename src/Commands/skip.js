@@ -4,13 +4,13 @@
  * Useage: !skip
  */
 
-exports.run = async (client, message, args, ops) => {
+exports.run = async (client, message, args, ops, rol) => {
 
     // Fetch Guild Objects
     let fetched = ops.active.get(message.guild.id);
 
     // Check for BANNED role
-    if(!message.member.roles.some(r => rol.bannedRoles.includes(r.name)) ) {
+    if(message.member.roles.some(r => rol.bannedRoles.includes(r.name)) ) {
 
         return message.channel.send('**Verification Check Failed: You have been temporarily banned from using this command!**');
     }

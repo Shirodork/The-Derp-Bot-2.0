@@ -9,7 +9,7 @@ exports.run = async (client, message, args, ops) => {
 
     const embed = {
         "title": "Bot Information",
-        "description": "'The Derp Bot ©' is an all purpose bot created by ShiroDork#0001.'",
+        "description": "'The Derp Bot ©' is an all purpose bot created by a degenerate.'",
         "color": 65483,
         "timestamp": new Date(),
         "footer": {
