@@ -1,5 +1,5 @@
 /**
- * Summary: Ping for a friend . 
+ * Summary: Ping for a friend
  * 
  * Useage: !zechping [number]
  */
