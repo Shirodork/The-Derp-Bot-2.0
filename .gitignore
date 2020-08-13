@@ -87,8 +87,8 @@ Config.js
 config/
 
 #Personal Code
-Commands/zechping.js
-
+src/Commands/zechping.js
+src\Commands\zechping.js
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and *not* Next.js
