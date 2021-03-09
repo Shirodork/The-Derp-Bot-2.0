@@ -1,3 +1,5 @@
+#DEPRECIATED AS OF 3/9/2021! FIND THE NEW AND IMPROVED [Derp Bot 3](https://github.com/Shirodork/The-Derp-Bot-3)
+
 # The-Derp-Bot-2.0
 A multi-purpose discord bot made on Node.JS running on JavaScript. Please see [Wiki](https://github.com/Shirodork/The-Derp-Bot-2.0/wiki) for more details. 
 
